@@ -1,0 +1,75 @@
+<form formGroup="form">
+  <div class="row">
+      <div class="col s12 center-align">
+        <h3>Cadastro</h3>
+      </div>
+    </div>
+  <div class="row">
+    <div class="col s12">
+          <div class="file-field input-field">
+            <div class="btn">
+              <span>Comprovante de residência</span>
+              <input type="file">
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text">
+            </div>
+          </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12">
+          <div class="file-field input-field">
+            <div class="btn">
+              <span>Documento do residente</span>
+              <input type="file">
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text">
+            </div>
+          </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="drivers-license" type="text" class="validate" formControlName="cnh">
+      <label for="drivers-license">CNH</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12">
+          <div class="file-field input-field">
+            <div class="btn">
+              <span>Foto do perfil</span>
+              <input type="file">
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text">
+            </div>
+          </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="car-model" type="text" class="validate" formControlName="model">
+      <label for="car-model">Modelo do carro</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="car-color" type="text" class="validate" formControlName="color">
+      <label for="car-color">Cor do carro</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="car-plate" type="text" class="validate" formControlName="registrationPlate">
+      <label for="car-plate">Placa do carro</label>
+    </div>
+  </div>
+</form>
+<div class="row">
+  <div class="col s12 center-align">
+    <a class="waves-effect waves-light btn" (click)="registerDriver()">Concluir</a>
+  </div>
+</div>

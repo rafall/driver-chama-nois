@@ -1,0 +1,67 @@
+<form [formGroup]="form">
+  <div class="row">
+    <div class="col s12 center-align">
+      <h3>Cadastro</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="first_name" type="text" class="validate" formControlName="firstName">
+      <label for="first_name">Nome</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="last_name" type="text" class="validate" formControlName="lastName">
+      <label for="last_name">Sobrenome</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="cellphone" type="text" class="validate" formControlName="phoneNumber">
+      <label for="cellphone">Número do celular</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="password" type="password" class="validate" formControlName="password">
+      <label for="password">Senha</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="email" type="text" class="validate" formControlName="email">
+      <label for="email">E-mail</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="document" type="text" class="validate" formControlName="document">
+      <label for="document">CPF</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="address" type="text" class="validate" formControlName="address">
+      <label for="address">Endereço</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="house-number" type="text" class="validate" formControlName="houseNumber">
+      <label for="house-number">Número da residência</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="house-reference" type="text" class="validate" formControlName="referencePoint">
+      <label for="house-reference">Ponto de referência</label>
+    </div>
+  </div>
+</form>
+<div class="row">
+  <div class="col s12 center-align">
+    <!-- <a class="waves-effect waves-light btn" [routerLink]="'/register-second'">Próximo</a> -->
+    <a class="waves-effect waves-light btn" (click)="registerDriver()">Próximo</a>
+  </div>
+</div>
